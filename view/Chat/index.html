@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ein Gehirn</title>
+    <link rel="stylesheet" href="/public/styles/chatGPT.css">
+    <link rel="icon" href="/public/styles/img/fav.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="module" src="/public/script/js/main.js" defer></script>
+</head>
+<body>
+<div class="chat-container" id="chat-container">
+    <div class="chat incoming">
+        <div class="chat-content">
+            <div class="chat-details">
+                <img src="/public/styles/img/avatar-ai.jpg" alt="">
+                <div class="msg">Привет! Чем я могу тебе помочь?</div>
+            </div>
+            <span id="copy-btn" class="material-symbols-rounded">content_copy</span>
+        </div>
+    </div>
+
+</div>
+<div class="typing-container">
+    <div class="typing-content">
+        <div class="typing-textarea">
+            <textarea id="chat-input" placeholder="Написать сообщение..." required></textarea>
+            <span id="send-btn" class="material-symbols-rounded" title="Отправить">send</span>
+        </div>
+        <div class="typing-controls">
+        </div>
+    </div>
+</div>
+</body>
+</html>

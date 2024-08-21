@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login via Telegram</title>
+	<link rel="stylesheet" href="/public/styles/login.css">
+	<link rel="icon" href="/public/styles/img/fav.webp" type="image/x-icon">
+	<title>Login</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title">
+			Вход через Telegram
+		</div>
+		<div class="link">
+			<img src="/public/styles/img/qr.png" alt="NOPE">
+			<a href="https://t.me/einGehirnbot?start=auth" target="_blank">
+				<button class="btn-link" href="https://t.me/einGehirnbot?start=auth">Или перейдите по ссылке</button>
+			</a>
+		</div>
+		<form class="form">
+		    <div class="field">
+				<input type="number" class="code-input" id="code-input-1" required>
+				<input type="number" class="code-input" id="code-input-2" required>
+				<input type="number" class="code-input" id="code-input-3" required>
+				<input type="number" class="code-input" id="code-input-4" required>
+				<input type="number" class="code-input" id="code-input-5" required>
+				<input type="number" class="code-input" id="code-input-6" required>
+		    </div>
+		    <div class="field">
+			  	<input type="submit" class="btn-send" value="Отправить" id="btn-send">
+		    </div>
+		    <div class="ver">
+			  	0.9.1
+		    </div>
+		</form>
+	</div>
+	<script type="module" src="/public/login.js"></script>
+</body>
+</html>

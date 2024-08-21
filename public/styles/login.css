@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  place-items: center;
+  background: #343541;
+}
+
+.wrapper {
+  width: 360px;
+  background: #5B5E71;
+  border-radius: 15px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1019607843);
+}
+.wrapper .title {
+  font-size: 1.8em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 90px;
+  color: #FFFFFF;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: #ACACBE;
+}
+.wrapper .link {
+  margin: 30px 0;
+  display: grid;
+  justify-items: center;
+  user-select: none;
+}
+.wrapper .link img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+}
+.wrapper .link .btn-link {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  background: #ACACBE;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.wrapper .link .btn-link:hover {
+  background: #fff;
+  color: #000;
+}
+.wrapper .form {
+  padding: 0 50px;
+}
+.wrapper .form .field {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+}
+.wrapper .form .code-input {
+  font-size: 1.8em;
+  width: 38px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+.wrapper .form .code-input:focus {
+  border: 2px solid #1dd216;
+}
+.wrapper .form .btn-send {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 25px;
+}
+.wrapper .form .btn-send {
+  color: #FFFFFF;
+  border: none;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #ACACBE;
+  transition: all 0.3s ease;
+}
+.wrapper .form .btn-send:hover {
+  background: #fff;
+  color: #000;
+}
+.wrapper .form .btn-send:active {
+  transform: scale(0.9);
+}
+.wrapper .form .code-input::-webkit-outer-spin-button,
+.wrapper .form .code-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.wrapper .form .ver {
+  margin-top: 10px;
+  color: #CBCBCB;
+  text-align: end;
+  font-size: 15px;
+}

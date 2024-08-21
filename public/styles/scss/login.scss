@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+$colors: (
+    body-bg: #343541,
+    wrapper-bg: #5B5E71,
+    title-bg: #ACACBE,
+    font-color: #FFFFFF,
+    sign-color: #CBCBCB,
+);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-items: center;
+    background: map-get($colors, 'body-bg');
+}
+.wrapper {
+    width: 360px;
+    background: map-get($colors, 'wrapper-bg');
+    border-radius: 15px;
+    box-shadow: 0 15px 20px #0000001a;
+    .title {
+        font-size: 1.8em;
+        font-weight: 600;
+        text-align: center;
+        line-height: 90px;
+        color: map-get($colors, 'font-color');
+        user-select: none;
+        border-radius: 15px 15px 0 0;
+        background: map-get($colors, 'title-bg');
+    }
+    .link {
+        margin: 30px 0;
+        display: grid;
+        justify-items: center;
+        user-select: none;
+        img {
+            border: 1px solid map-get($colors, 'font-color');
+            border-radius: 15px;
+        }
+        .btn-link {
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #fff;
+            background: map-get($colors, 'title-bg');
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+    .form {
+        padding: 0 50px;
+        .field {
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            width: 100%;
+            margin-top: 30px;
+            position: relative;
+        }
+        .code-input {
+            font-size: 1.8em;
+            width: 38px;
+            text-align: center;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+            appearance: textfield;
+        }
+        .code-input:focus {
+            border: 2px solid #1dd216;
+        }
+        .btn-send {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border-radius: 25px;
+        }
+        .btn-send {
+            color: map-get($colors, 'font-color');
+            border: none;
+            padding-left: 0;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            background: map-get($colors, 'title-bg');
+            transition: all 0.3s ease;
+        }
+        .btn-send:hover {
+            background: #fff;
+            color: #000;
+        }
+        .btn-send:active {
+            transform: scale(0.9);
+        }
+        .code-input::-webkit-outer-spin-button,
+        .code-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        .ver {
+            margin-top: 10px;
+            color: map-get($colors, 'sign-color');
+            text-align: end;
+            font-size: 15px;
+        }
+    }
+}
